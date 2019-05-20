@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="transfer">
+      <div class="transfer__window">
+        <div class="transfer__contents">
+          <div>
+            <div class="transfer__uploader-files">
+              <form>
+                <label for="add-btn" class="add-btn"
+                  >✕
+                  <input type="file" multiple="multiple" id="add-btn" />
+                </label>
+              </form>
+              <h2 class="transfer__head">Dateien hinzufügen</h2>
+            </div>
+            <div class="uploader__fields">
+              <div class="email-field">
+                <label for="email" class="email-field__label">E-Mail an</label
+                ><input
+                  required
+                  name="email"
+                  class="email-field__field"
+                  type="email"
+                  autocomplete="Off"
+                  value=""
+                />
+              </div>
+              <div class="email-field">
+                <label for="email" class="email-field__label"
+                  >Deine E-Mail</label
+                ><input
+                  required
+                  name="email"
+                  class="email-field__field"
+                  type="email"
+                  autocomplete="Off"
+                  value=""
+                />
+              </div>
+              <div class="textarea">
+                <label id="" for="message" class="textarea__label"
+                  >Nachricht</label
+                >
+                <textarea
+                  aria-labelledby=""
+                  name="message"
+                  class="textarea__field"
+                  type="text"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="transfer__footer">
+          <div class="poptip">
+            <div class="scroll-menu" id="settings">
+              <h3 class="scroll-menu__head">Select transformation content</h3>
+              <form action="" class="scroll-menu__form-1">
+                <label for="lab-item-1" class="scroll-menu__label"> </label>
+                <span class="scroll-menu__title">whole document</span>
+                <input
+                  class="scroll-menu__field"
+                  type="checkbox"
+                  name="document"
+                  id="lab-item-1"
+                />
+                <label for="lab-item-2" class="scroll-menu__label"> </label>
+                <span class="scroll-menu__title">pages</span>
+                <input
+                  class="scroll-menu__field"
+                  type="checkbox"
+                  name="pages"
+                  id="lab-item-2"
+                />
+              </form>
+              <h3 class="scroll-menu__head">Select translation provider</h3>
+              <form action="" class="scroll-menu__form-2">
+                <label for="lab-item-3" class="scroll-menu__label"> </label>
+                <span class="scroll-menu__title"
+                  >AWS (average price per sign: IOTA)</span
+                >
+                <input
+                  class="scroll-menu__field"
+                  type="checkbox"
+                  name=""
+                  id="lab-item-3"
+                />
+                <label for="lab-item-4" class="scroll-menu__label"> </label>
+                <span class="scroll-menu__title"
+                  >DeepL (average price per sign: sign:)</span
+                >
+                <input
+                  class="scroll-menu__field"
+                  type="checkbox"
+                  name=""
+                  id="lab-item-4"
+                />
+                <label for="lab-item-5" class="scroll-menu__label"> </label>
+                <span class="scroll-menu__title"
+                  >Google (average price per sign:)</span
+                >
+                <input
+                  class="scroll-menu__field"
+                  type="checkbox"
+                  name=""
+                  id="lab-item-5"
+                />
+              </form>
+            </div>
+            <button class="transfer__toggle-options" title="Settings">
+              <svg id="btn-icon" viewbox="0 0 24 24">
+                <path
+                  fill="#409fff"
+                  d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M16.5,13.5 C17.3284271,13.5 18,12.8284271 18,12 C18,11.1715729 17.3284271,10.5 16.5,10.5 C15.6715729,10.5 15,11.1715729 15,12 C15,12.8284271 15.6715729,13.5 16.5,13.5 Z M12,13.5 C12.8284271,13.5 13.5,12.8284271 13.5,12 C13.5,11.1715729 12.8284271,10.5 12,10.5 C11.1715729,10.5 10.5,11.1715729 10.5,12 C10.5,12.8284271 11.1715729,13.5 12,13.5 Z M7.5,13.5 C8.32842712,13.5 9,12.8284271 9,12 C9,11.1715729 8.32842712,10.5 7.5,10.5 C6.67157288,10.5 6,11.1715729 6,12 C6,12.8284271 6.67157288,13.5 7.5,13.5 Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <button id="transfer-btn" type="button" class="transfer__button">
+            Senden
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="report">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        corporis optio voluptatibus alias blanditiis iure.
+      </p>
+    </div>
+    <script>
+      let scrollMenu = document.getElementById("settings");
+      let getReport = document.getElementById("transfer-btn");
+      scrollMenu.addEventListener("click", function() {
+        event.target.classList.toggle("active");
+      });
+      getReport.addEventListener("click", function() {
+        let report = document.querySelector(".report");
+        report.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
